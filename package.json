@@ -1,24 +1,28 @@
 {
   "name": "social-network",
   "version": "1.0.0",
-  "description": "for practice",
-  "main": "server/app.js",
+  "description": "simple social network",
+  "main": "app.js",
   "scripts": {
-    "start": "node server/app",
-    "server": "nodemon server/app",
-    "client": "npm run start --prefix client",
-    "client-build": "npm run build --prefix client",
-    "client-install": "npm run install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "nodemon app",
+    "start": "node app"
   },
-  "keywords": [
-    "javascript",
-    "MERN"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovMikhail/Social-network.git"
+  },
   "author": "Mikhail Volkov <volkov.work1@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volkovMikhail/Social-network/issues"
+  },
+  "homepage": "https://github.com/volkovMikhail/Social-network#readme",
   "devDependencies": {
-    "concurrently": "^6.2.0",
-    "nodemon": "^2.0.12"
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "express-handlebars": "7.1.2"
   }
 }
