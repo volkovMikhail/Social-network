@@ -3,3 +3,6 @@
 
 # config file
 .env
+
+# IDE
+.vscode
