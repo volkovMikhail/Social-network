@@ -21,13 +21,32 @@
   background-color: var(--bs-tertiary-bg);
 }
 
-@media (min-width: 768px) { 
+
+main {
+  align-self: center;
+  max-width: 550px;
+}
+
+/* @media (min-width: 768px) { */
+@media (min-width: 1030px) {
   #collapse-sidebar.collapse:not(.show) {
     display: block;
   }
 
-  #navbar{
+  #navbar {
     display: none;
   }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text-truncate-5 {
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
