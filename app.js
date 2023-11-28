@@ -3,7 +3,7 @@ const express = require('express');
 const { engine } = require('express-handlebars');
 const path = require('path');
 
-const signUpRouter = require('./routes/sign-up');
+const signUpRouter = require('./routes/sign-up/sign-up-router');
 
 const app = express();
 
