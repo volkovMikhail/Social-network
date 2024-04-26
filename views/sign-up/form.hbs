@@ -1,4 +1,15 @@
+{{!
+  viewSchema: {
+    message: string
+  }
+}}
+
 <form class="my-5 col" style="max-width: 350px;" action="/sign-up" method="post">
+  {{#if message}}
+    <div class="mb-3 p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3">
+      {{ message }}
+    </div>
+  {{/if}}
   <div class="mb-3">
     <label for="nickname" class="form-label">Your nickname</label>
     <input name="nickname" type="text" class="form-control" id="nickname" required>
